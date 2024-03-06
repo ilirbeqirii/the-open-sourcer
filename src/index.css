@@ -1,0 +1,63 @@
+:root {
+  font-family: "Baloo 2", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --clr-primary: #238636;
+  --bg-clr: rgb(13, 17, 23);
+  --text-clr: rgb(230, 237, 243);
+  --accent-clr: #f78166;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url(./assets//fonts//static/Baloo2-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url(./assets//fonts//static/Baloo2-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url(./assets//fonts//static/Baloo2-Bold.ttf);
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color-scheme: light dark;
+  margin: 0;
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+}
+
+.inline-spin.ant-spin .ant-spin-dot-item {
+  background-color: white;
+}
+
+.sidemenu > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wrapper {
+  .ant-modal-content {
+    padding: 0;
+  }
+}
+
+.notification-wrapper {
+  background-color: #010a12;
+  .ant-notification-notice-message,
+  .ant-notification-notice-description {
+    color: white !important;
+  }
+}
